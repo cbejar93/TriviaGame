@@ -10,28 +10,35 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
+        <div class="row mt-5 mb-5">
+            <div class="col-md-12" id="temo">
                 <div class="jumbotron">
-                    <h1 class="display-4">Carto Quiz!</h1>
-                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <h1 class="display-4"><b>Carto Quiz!</b></h1>
+                    <p class="lead"><b>This is a simple quiz where you guess the capital of a few countries, within a certain amount of time.</b></p>
                     <hr class="my-4">
-                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <p><b>Think you know geography well enough? Click below to find out!</b></p>
                     <p class="lead">
-                      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                      <a class="btn btn-primary btn-lg" id="start" role="button">Start</a>
                     </p>
                   </div>
             </div>
 
         </div>
-        <div class="row" id="show">
-            <div class="col-md" id="quiz">
+        <div class="row d-flex justify-content-center" id="show">
+            <div class="col-md-2" id="timer"></div>
+            <div class="col-md-10" id="quiz">
 
             </div>
+        </div>
+        <div class="row" id="endgame">
+            <div class="col-md-6" id="results"></div>
+            <div class="col-md-6" id="again"></div>
         </div>
     </div>
     <script type="text/javascript" src="assets/javascript/app.js"></script>

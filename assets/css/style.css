@@ -1,0 +1,19 @@
+.jumbotron {
+    background-image: url("../images/map2.png");
+    color: white;
+}
+
+body{
+    background-image: url("../images/halftone-yellow.png");
+    font-family: 'Roboto Slab', serif;
+}
+
+#show{
+    background-color: whitesmoke;
+    display: none;
+}
+
+#endgame{
+    background-color: whitesmoke;
+    display: none;
+}
