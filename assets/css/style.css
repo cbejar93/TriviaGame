@@ -17,3 +17,15 @@ body{
     background-color: whitesmoke;
     display: none;
 }
+
+.display-4{
+    font-size: 100px
+}
+
+#again{
+    z-index: 1000;
+}
+
+#enter{
+    display: none;
+}
