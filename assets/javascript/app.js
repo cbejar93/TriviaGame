@@ -45,28 +45,25 @@ function stop(){
 function hideShow(){
     
     // This hides the jumbotron
-    document.getElementById("temo").style.display = "none";
+    document.getElementById("jumbo").style.display = "none";
 
     // This shows the quiz questions
     document.getElementById("quiz").style.display = "block";
-
+    // This shows the submit questions
     document.getElementById("enter").style.display = "block";
 };
 
-function submit(){
-    $("#results").append("<input type='button' value='submit'>");
-   
-}
+
 
 
 // This is a for loop for displaying the question and the answer in new elements while at the same time getting a value for the button
 function qaLoop(){
     for (var i = 0; i < 3; i++){
         $("#quiz").append("<p>" + trivia[i].questions + "</p> <br>");
-        // $("#quiz").append("<input type='button' class='temo' value=" +trivia[i].answers.a +">" + "<input type='button' class='temo' value=" +trivia[i].answers.b +">" + "<input type='button' value=" +trivia[i].answers.c +">" + "<input type='button' value=" +trivia[i].answers.d +">");
+     
         for (var j = 0; j< 4 ; j++){
     
-            $("#quiz").append("<input type ='button' name='question'"+i+" value="+trivia[i].answers[j]+">");
+            $("#quiz").append("<input type ='radio' name='question'"+i+" value="+trivia[i].answers[j]+"><span>"+trivia[i].answers[j]+"</span");
         
         };
     
@@ -83,7 +80,7 @@ function quizlayOut(){
 
     timer();
 
-    submit();
+    
 
     
     
@@ -101,8 +98,17 @@ $("#quiz").on("click", 'input', function(){
 
 $("#start").click(quizlayOut);
 
+
+// This is where all other elements are hidden and the user is able to go back to start area.
 $("#enter").on("click", function(){
-    $("#results").append()
+    // This is to show the final card where you can restart and the score 
+    document.getElementById("card1").style.display = "block";
+    
+    // This is to head all the remaining element in the page.
+    document.getElementById("quiz").style.display = "none";
+    document.getElementById("enter").style.display = "none";
+    document.getElementById("timer").style.display = "none";
+
    
 
 });

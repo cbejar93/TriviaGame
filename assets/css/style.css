@@ -15,11 +15,16 @@ body{
 
 #endgame{
     background-color: whitesmoke;
-    display: none;
+    
 }
 
 .display-4{
-    font-size: 100px
+    font-size: 150px;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 #again{
@@ -28,4 +33,26 @@ body{
 
 #enter{
     display: none;
+}
+
+#card1{
+    display: none;
+}
+
+.lead{
+    font-size: 45px;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+
+}
+
+#temo{
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }

@@ -17,12 +17,12 @@
 <body>
     <div class="container">
         <div class="row mt-5 mb-5">
-            <div class="col-md-12" id="temo">
+            <div class="col-md-12" id="jumbo">
                 <div class="jumbotron">
                     <h1 class="display-4"><b>Carto Quiz!</b></h1>
                     <p class="lead"><b>This is a simple quiz where you guess the capital of a few countries, within a certain amount of time.</b></p>
                     <hr class="my-4">
-                    <p><b>Think you know geography well enough? Click below to find out!</b></p>
+                    <p id="temo"><b>Think you know geography well enough? Click below to find out!</b></p>
                     <p class="lead">
                       <a class="btn btn-primary btn-lg" id="start" role="button">Start</a>
                     </p>
@@ -32,14 +32,29 @@
         </div>
         <div class="row d-flex justify-content-center" id="show">
             <div class="col-md-2" id="timer"></div>
-            <div class="col-md-10" id="quiz">
+            <div class="col-md-8" id="quiz">
 
             </div>
+            <div class="col-md-2" id="results"> <input type="button" id="enter" value="submit"></div>
         </div>
-        <div class="row d-flex justify-content-center" id="endgame">
-            <div class="col-md-6" id="results"> <input type="button" id="enter" value="submit"></div>
-            <div class="col-md-6" id="again"></div>
-        </div>
+        <div class="row" id="card1">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Quiz Finished!</h5>
+                  <p class="card-text" id"ca">Correct Answers</p>
+                  <a href="index.html" class="btn btn-primary">Restart</a>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        
+            
+            
+                
+            
+        
     </div>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
