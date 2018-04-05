@@ -32,17 +32,21 @@
         </div>
         <div class="row d-flex justify-content-center" id="show">
             <div class="col-md-2" id="timer"></div>
-            <div class="col-md-8" id="quiz">
+            <div class="col-md-8 main" id="quiz">
 
             </div>
-            <div class="col-md-2" id="results"> <input type="button" id="enter" value="submit"></div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md" id="results"> <input type="button" id="enter" value="submit"></div>
         </div>
         <div class="row" id="card1">
             <div class="col-sm-6">
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Quiz Finished!</h5>
-                  <p class="card-text" id"ca">Correct Answers</p>
+                  <p class="card-text">Correct Answers<span id="ca"></span></p><br>
+                  <p class="card-text">Incorrect Answers<span id="ica"></span></p>
                   <a href="index.html" class="btn btn-primary">Restart</a>
                 </div>
               </div>

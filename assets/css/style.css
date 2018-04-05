@@ -56,3 +56,8 @@ body{
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
 }
+
+.portal{
+    text-align: center;
+    margin: auto;
+}
