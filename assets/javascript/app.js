@@ -70,7 +70,7 @@ function qaLoop(){
         // This for loop is to display the possible answers
         for (var j = 0; j< 4 ; j++){
     
-            $("#quiz").append("<input type ='radio' name='question'"+i+" value="+trivia[i].answers[j]+"><span>"+trivia[i].answers[j]+"</span");
+            $("#quiz").append("<p class='portal2'> <input type ='radio' name='question'"+i+" value="+trivia[i].answers[j]+"><span>"+trivia[i].answers[j]+"</span </p>");
         
         };
     
@@ -121,9 +121,9 @@ $("#enter").on("click", function ender(){
 
 // This is supposed to check the answers 
 function check(){
-guess.forEach(function(index){
+for (var i = 0; i < 5; i++){
     
-      if (index === trivia[index].correct){
+      if (guess[i] === trivia[i].correct){
           correctA++;
           $("#ca").append.correctA;
           console.log(correctA);
@@ -134,7 +134,7 @@ guess.forEach(function(index){
           console.log(incorrectA);
       }
     
-  });
+  };
 }
 
 });
